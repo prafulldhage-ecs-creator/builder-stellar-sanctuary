@@ -12,6 +12,7 @@ const projects = [
     title: "CPLD-Based Gas Leakage Detector",
     desc: "Hardware–software integrated system to detect gas leakage and trigger safety responses. Team-based project currently under development.",
     href: "#",
+    image: "https://cdn.builder.io/api/v1/image/assets%2Fcaaa4ede07ec445597e01b5c69a33caa%2Fbcdce6469efe44d6a41cf1cdc7299d4e?format=webp&width=800",
   },
   {
     title: "Portfolio Website",
