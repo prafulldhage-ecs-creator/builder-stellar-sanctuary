@@ -6,6 +6,7 @@ const projects = [
     title: "Synergia: The Solar Piezo Powered Future",
     desc: "A hybrid renewable energy project combining solar and piezoelectric technologies to produce clean, decentralized power. Secured 2nd Prize at Avinya’25.",
     href: "#",
+    image: "https://cdn.builder.io/api/v1/image/assets%2Fcaaa4ede07ec445597e01b5c69a33caa%2F6f42e8ef20c44f7594bd806bb04c0f99?format=webp&width=800",
   },
   {
     title: "CPLD-Based Gas Leakage Detector",
@@ -36,7 +37,11 @@ export const Projects = () => {
             transition={{ delay: i * 0.05 }}
             className="group relative overflow-hidden rounded-2xl glass block"
           >
-            <div className="aspect-[4/3] w-full bg-gradient-to-br from-indigo-600/30 to-violet-600/30" />
+            {p.image ? (
+              <img src={p.image} alt={p.title} className="aspect-[4/3] w-full object-cover" />
+            ) : (
+              <div className="aspect-[4/3] w-full bg-gradient-to-br from-indigo-600/30 to-violet-600/30" />
+            )}
             <div className="absolute inset-0 p-5 flex flex-col justify-end bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
               <h3 className="font-semibold">{p.title}</h3>
               <p className="text-sm text-white/80 mt-1 line-clamp-3">{p.desc}</p>

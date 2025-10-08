@@ -11,7 +11,7 @@ export const Hero = () => {
           transition={{ duration: 0.7 }}
           className="space-y-6"
         >
-          <p className="text-sm uppercase tracking-widest text-white/60">Hey, I’m</p>
+          <p className="text-sm uppercase tracking-widest text-white/60">Hey, I���m</p>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight">
             <span className="text-gradient">Prafull Dhage</span> <span className="inline-block">👋</span>
           </h1>
@@ -38,12 +38,12 @@ export const Hero = () => {
           transition={{ duration: 0.7 }}
           className="relative"
         >
-          <div className="relative mx-auto h-72 w-72 sm:h-80 sm:w-80 md:h-96 md:w-96 rounded-3xl glass ring-glow animate-float">
+          <div className="relative mx-auto h-72 w-72 sm:h-80 sm:w-80 md:h-96 md:w-96 rounded-3xl glass ring-glow animate-float group">
             <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-indigo-500/30 to-violet-500/30" />
             <img
-              src="/prafull.jpg"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fcaaa4ede07ec445597e01b5c69a33caa%2F13ec8db8329944ce9e32c797565c797c?format=webp&width=800"
               alt="Portrait of Prafull Dhage"
-              className="absolute inset-0 h-full w-full object-cover rounded-3xl mix-blend-lighten"
+              className="absolute inset-0 h-full w-full object-cover rounded-3xl mix-blend-lighten rotate-90 scale-125 transition-transform duration-700"
             />
             <div className="absolute -inset-6 rounded-[2rem] bg-gradient-to-r from-indigo-600/20 to-violet-600/20 blur-xl -z-10" />
           </div>

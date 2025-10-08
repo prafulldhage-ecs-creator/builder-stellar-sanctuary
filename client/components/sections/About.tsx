@@ -12,24 +12,8 @@ export const About = () => {
       >
         <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-gradient">About Me</h2>
         <div className="space-y-4 text-white/80 leading-relaxed">
-          <p>
-            I’m <strong>Prafull Dhage</strong>, a 2nd-year Electronics & Computer Science Engineering student at Atharva College of Engineering. I’m passionate about blending design, technology, and creativity to build modern, user-focused digital experiences.
-          </p>
-          <p>
-            I currently serve as a <strong>Committee Member at GDGC (Google Developer Group Campus)</strong> and the <strong>Webmaster Assistant Head at IEEE Techithon</strong>, where I work on web design, UI improvement, and developer community initiatives.
-          </p>
-          <p>
-            I’m also exploring Python programming and continuously improving my web development and UI/UX design skills. Apart from tech, I love video editing — I create and edit visual content using CapCut and Premiere Pro, combining creativity with storytelling.
-          </p>
-          <p>
-            Recently, my team secured <strong>2nd Prize at Avinya’25</strong> for our project <em>“Synergia: The Solar Piezo Powered Future”</em> — a hybrid renewable energy concept combining solar and piezoelectric power for decentralized energy generation.
-          </p>
-          <p>
-            I’ve also participated in two <strong>Model United Nations (MUNs)</strong> under the Indian Parliament domain, which helped me develop strong communication and leadership skills.
-          </p>
-          <p>
-            Currently, I’m also working on a <strong>CPLD-Based Gas Leakage Detector</strong> — a safety innovation project integrating sensors, embedded logic, and real-time alerts.
-          </p>
+          <p>I’m <strong>Prafull Dhage</strong>, a 2nd‑year E&CS student at Atharva College. I love crafting clean, user‑first experiences across UI/UX and the web.</p>
+          <p>Committee Member at <strong>GDGC</strong> and <strong>Webmaster Assistant Head at IEEE Techithon</strong>. Exploring Python and building impactful projects with great teams.</p>
         </div>
       </motion.div>
     </section>
