@@ -6,6 +6,7 @@ const nav = [
   { href: "#skills", label: "Skills" },
   { href: "#experience", label: "Experience" },
   { href: "#projects", label: "Projects" },
+  { href: "#resume", label: "Resume" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -21,7 +22,7 @@ export const Header = () => {
             </a>
             <nav className="hidden md:flex items-center gap-1">
               {nav.map((n) => (
-                <a key={n.href} href={n.href} className="px-3 py-2 text-sm text-white/70 hover:text-white transition-colors">
+                <a key={n.href} href={n.href} target="_blank" rel="noreferrer" className="px-3 py-2 text-sm text-white/70 hover:text-white transition-colors">
                   {n.label}
                 </a>
               ))}
