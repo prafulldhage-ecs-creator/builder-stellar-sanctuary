@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { Github } from "lucide-react";
 
 const projects = [
@@ -26,16 +25,12 @@ export const Projects = () => {
     <section id="projects" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
       <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-gradient">Projects</h2>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {projects.map((p, i) => (
-          <motion.a
+        {projects.map((p) => (
+          <a
             key={p.title}
             href={p.href}
             target={p.href.startsWith("http") ? "_blank" : undefined}
             rel={p.href.startsWith("http") ? "noreferrer" : undefined}
-            whileInView={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: 20 }}
-            viewport={{ once: true }}
-            transition={{ delay: i * 0.05 }}
             className="group relative overflow-hidden rounded-2xl glass block"
           >
             {p.image ? (
@@ -43,14 +38,14 @@ export const Projects = () => {
             ) : (
               <div className="aspect-[4/3] w-full bg-gradient-to-br from-indigo-600/30 to-violet-600/30" />
             )}
-            <div className="absolute inset-0 p-5 flex flex-col justify-end bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+            <div className="absolute inset-0 p-5 flex flex-col justify-end bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-100">
               <h3 className="font-semibold">{p.title}</h3>
               <p className="text-sm text-white/80 mt-1 line-clamp-3">{p.desc}</p>
               <div className="mt-3 flex items-center gap-2 text-white/80">
                 <Github className="h-4 w-4" /> <span className="text-sm">View on GitHub</span>
               </div>
             </div>
-          </motion.a>
+          </a>
         ))}
       </div>
     </section>
