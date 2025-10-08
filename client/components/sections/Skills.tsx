@@ -2,16 +2,35 @@ import { motion } from "framer-motion";
 import { Brush, Code2, Github, Film, Brain } from "lucide-react";
 
 const skills = [
-  { title: "UI/UX Design", desc: "Figma, Wireframing, Prototyping", icon: Brush },
-  { title: "Web Development", desc: "HTML, CSS, JavaScript, React (basics)", icon: Code2 },
-  { title: "Python", desc: "Logic building, small automation projects", icon: Brain },
+  {
+    title: "UI/UX Design",
+    desc: "Figma, Wireframing, Prototyping",
+    icon: Brush,
+  },
+  {
+    title: "Web Development",
+    desc: "HTML, CSS, JavaScript, React (basics)",
+    icon: Code2,
+  },
+  {
+    title: "Python",
+    desc: "Logic building, small automation projects",
+    icon: Brain,
+  },
   { title: "Video Editing", desc: "CapCut, Adobe Premiere Pro", icon: Film },
-  { title: "Git & GitHub", desc: "Version control, collaboration", icon: Github },
+  {
+    title: "Git & GitHub",
+    desc: "Version control, collaboration",
+    icon: Github,
+  },
 ];
 
 export const Skills = () => {
   return (
-    <section id="skills" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+    <section
+      id="skills"
+      className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16"
+    >
       <div className="mb-8">
         <h2 className="text-2xl sm:text-3xl font-bold text-gradient">Skills</h2>
       </div>

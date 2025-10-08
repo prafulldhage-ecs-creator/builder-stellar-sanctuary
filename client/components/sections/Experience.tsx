@@ -25,8 +25,13 @@ const items = [
 
 export const Experience = () => {
   return (
-    <section id="experience" className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-16">
-      <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-gradient">Experience & Achievements</h2>
+    <section
+      id="experience"
+      className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-16"
+    >
+      <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-gradient">
+        Experience & Achievements
+      </h2>
       <div className="relative">
         <div className="absolute left-4 top-0 bottom-0 w-px bg-white/10" />
         <div className="space-y-8">

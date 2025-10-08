@@ -13,7 +13,10 @@ export const ParallaxBackground = () => {
   }, []);
 
   return (
-    <div aria-hidden className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+    <div
+      aria-hidden
+      className="pointer-events-none fixed inset-0 -z-10 overflow-hidden"
+    >
       <div
         className="absolute -top-20 -left-20 h-[30rem] w-[30rem] rounded-full blur-3xl animate-pulse-subtle"
         style={{

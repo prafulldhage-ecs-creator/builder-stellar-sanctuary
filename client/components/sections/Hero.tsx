@@ -3,7 +3,10 @@ import { Button } from "@/components/ui/button";
 
 export const Hero = () => {
   return (
-    <section id="home" className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-24 pb-20">
+    <section
+      id="home"
+      className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-24 pb-20"
+    >
       <div className="grid md:grid-cols-2 gap-10 items-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -11,9 +14,12 @@ export const Hero = () => {
           transition={{ duration: 0.7 }}
           className="space-y-6"
         >
-          <p className="text-sm uppercase tracking-widest text-white/60">Hey, I���m</p>
+          <p className="text-sm uppercase tracking-widest text-white/60">
+            Hey, I���m
+          </p>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight">
-            <span className="text-gradient">Prafull Dhage</span> <span className="inline-block">👋</span>
+            <span className="text-gradient">Prafull Dhage</span>{" "}
+            <span className="inline-block">👋</span>
           </h1>
           <p className="text-lg sm:text-xl text-white/80">
             UI/UX Designer | Web Developer | GDGC & IEEE Member | Innovator
@@ -24,11 +30,29 @@ export const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
           >
-            <span className="text-gradient font-semibold">Designing experiences.</span> Building ideas. Inspiring change.
+            <span className="text-gradient font-semibold">
+              Designing experiences.
+            </span>{" "}
+            Building ideas. Inspiring change.
           </motion.p>
           <div className="flex flex-wrap gap-3 pt-2">
-            <a href="#projects"><Button size="lg" className="bg-gradient-to-r from-indigo-500 to-violet-500 hover:from-indigo-400 hover:to-violet-400 text-white ring-glow">🚀 View My Work</Button></a>
-            <a href="#contact"><Button size="lg" variant="secondary" className="bg-white/10 hover:bg-white/20 border-white/10">📩 Contact Me</Button></a>
+            <a href="#projects">
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-indigo-500 to-violet-500 hover:from-indigo-400 hover:to-violet-400 text-white ring-glow"
+              >
+                🚀 View My Work
+              </Button>
+            </a>
+            <a href="#contact">
+              <Button
+                size="lg"
+                variant="secondary"
+                className="bg-white/10 hover:bg-white/20 border-white/10"
+              >
+                📩 Contact Me
+              </Button>
+            </a>
           </div>
         </motion.div>
 
